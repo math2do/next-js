@@ -8,10 +8,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      gridTemplateColumns: {
+        'fluid-5': 'repeat(auto-fit, minmax(5rem, 1fr))',
+        'fluid-10': 'repeat(auto-fit, minmax(10rem, 1fr))',
+        'fluid-15': 'repeat(auto-fit, minmax(15rem, 1fr))',
+        'fluid-20': 'repeat(auto-fit, minmax(20rem, 1fr))',
+        'fluid-25': 'repeat(auto-fit, minmax(25rem, 1fr))',
+        'fluid-30': 'repeat(auto-fit, minmax(30rem, 1fr))',
+        'fluid-35': 'repeat(auto-fit, minmax(35rem, 1fr))',
+        'fluid-40': 'repeat(auto-fit, minmax(40rem, 1fr))',
+        'fluid-45': 'repeat(auto-fit, minmax(45rem, 1fr))',
+        'fluid-50': 'repeat(auto-fit, minmax(50rem, 1fr))',
       },
     },
   },
