@@ -2,10 +2,8 @@ import React from "react";
 
 const Tailwind = () => {
   return (
-    <div>
-      <p className="">
-        Whereas disregard and contempt for human rights have resulted
-      </p>
+    <div className="mx-auto max-w-6xl border-0">
+      <h1>What the hell is this</h1>
     </div>
   );
 };

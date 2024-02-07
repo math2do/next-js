@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .underlined {
+    @apply relative;
+  }
+  .underlined::after {
+    @apply absolute -bottom-[0.4em] left-1/2 h-[0.15em] w-[80%] -translate-x-1/2 rounded-sm bg-primary-700 content-[''];
+  }
+}

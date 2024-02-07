@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Cantarell } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
+import Navbar from "@/components/math2do/Navbar";
+import Footer from "@/components/math2do/Footer";
 
 const cantarell = Cantarell({
   weight: ["400", "700"],
@@ -8,8 +10,9 @@ const cantarell = Cantarell({
 });
 
 export const metadata: Metadata = {
+  icons: "./header-icon.svg",
   title: "Mathura Tudu",
-  description: "Learning by practice",
+  description: "Personal portfolio",
 };
 
 export default function RootLayout({
@@ -18,8 +21,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={cantarell.className}>{children}</body>
-    </html>
+    <div className="mx-auto max-w-6xl">
+      <Navbar />
+      <main className={cantarell.className}>{children}</main>
+      <Footer />
+    </div>
   );
 }
