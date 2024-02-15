@@ -4,11 +4,6 @@ const Hero = () => {
   return (
     <>
       <div className="relative mx-auto grid h-80 max-w-6xl  md:grid-cols-2">
-        {/* blurr background */}
-        <div className="absolute right-1/2 top-1/2 -z-10 h-80 w-80 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-10 blur-xl"></div>
-
-        <div className="top-30 absolute left-1/2 -z-10 h-60 w-60 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-10 blur-xl"></div>
-
         <div className="flex h-full w-full items-center justify-center px-2">
           <div className="w-full text-center">
             <h1 className="text-2xl">
@@ -32,7 +27,6 @@ const Hero = () => {
           </h1>
         </div>
       </div>
-      <div className="bg-primary-50 h-48"></div>
     </>
   );
 };
