@@ -32,7 +32,7 @@ const Hero = () => {
           </h1>
         </div>
       </div>
-      <div className="h-48 bg-primary-50"></div>
+      <div className="bg-primary-50 h-48"></div>
     </>
   );
 };

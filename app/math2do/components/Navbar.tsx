@@ -28,12 +28,12 @@ const Navbar = () => {
         <Link href="/math2do">
           <div className="flex cursor-pointer items-center">
             <FontAwesomeIcon
-              className="h-6 font-extrabold text-primary-700"
+              className="text-primary-700 h-6 font-extrabold"
               icon={faTerminal}
             />
 
             <h1 className="text-2xl font-bold shadow-black drop-shadow-2xl">
-              <span className="capitalize text-primary-700">math</span>
+              <span className="text-primary-700 capitalize">math</span>
               <span>2do</span>
             </h1>
           </div>
@@ -41,7 +41,7 @@ const Navbar = () => {
 
         {/* expland button  */}
         <FontAwesomeIcon
-          className={`${expandMenu ? null : "rotate-180"} h-6 cursor-pointer p-2 font-bold text-primary-700 transition-all duration-300 hover:rounded-full hover:bg-gray-300 md:hidden`}
+          className={`${expandMenu ? null : "rotate-180"} text-primary-700 h-6 cursor-pointer p-2 font-bold transition-all duration-300 hover:rounded-full hover:bg-gray-300 md:hidden`}
           onClick={() => {
             setExpandMenu(!expandMenu);
           }}
@@ -71,7 +71,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <button className="hidden rounded-md border-2 border-primary-700 px-6 py-0.5 tracking-widest text-primary-900 transition duration-300 hover:bg-primary-700 hover:text-white md:inline-block">
+        <button className="border-primary-700 text-primary-900 hover:bg-primary-700 hidden rounded-md border-2 px-6 py-0.5 tracking-widest transition duration-300 hover:text-white md:inline-block">
           Login
         </button>
       </nav>
@@ -80,19 +80,19 @@ const Navbar = () => {
       <ul
         className={`${expandMenu ? null : "hidden"} h-lvh w-full space-y-4 py-4 text-center text-sm font-semibold text-gray-500`}
       >
-        <li className="cursor-pointer py-3 uppercase tracking-wider transition duration-500 hover:translate-x-2 hover:bg-primary-100">
+        <li className="hover:bg-primary-100 cursor-pointer py-3 uppercase tracking-wider transition duration-500 hover:translate-x-2">
           Home
         </li>
-        <li className="cursor-pointer py-3 uppercase tracking-wider transition duration-500 hover:translate-x-2 hover:bg-primary-100">
+        <li className="hover:bg-primary-100 cursor-pointer py-3 uppercase tracking-wider transition duration-500 hover:translate-x-2">
           Projects
         </li>
-        <li className="cursor-pointer py-3 uppercase tracking-wider transition duration-500 hover:translate-x-2 hover:bg-primary-100">
+        <li className="hover:bg-primary-100 cursor-pointer py-3 uppercase tracking-wider transition duration-500 hover:translate-x-2">
           Portfolio
         </li>
-        <li className="cursor-pointer py-3 uppercase tracking-wider transition duration-500 hover:translate-x-2 hover:bg-primary-100">
+        <li className="hover:bg-primary-100 cursor-pointer py-3 uppercase tracking-wider transition duration-500 hover:translate-x-2">
           About
         </li>
-        <li className="cursor-pointer py-3 uppercase tracking-wider transition duration-500 hover:translate-x-2 hover:bg-primary-100">
+        <li className="hover:bg-primary-100 cursor-pointer py-3 uppercase tracking-wider transition duration-500 hover:translate-x-2">
           Contact
         </li>
       </ul>
