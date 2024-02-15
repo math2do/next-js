@@ -21,7 +21,7 @@ const Navbar = () => {
   });
 
   return (
-    <section>
+    <section className="mx-auto max-w-6xl">
       <nav className="flex items-center justify-between rounded-md p-4">
         {/* logo */}
 

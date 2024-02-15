@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Cantarell } from "next/font/google";
 import "../globals.css";
-import Navbar from "@/components/math2do/Navbar";
-import Footer from "@/components/math2do/Footer";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const cantarell = Cantarell({
   weight: ["400", "700"],
@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="mx-auto max-w-6xl">
+    <div>
       <Navbar />
       <main className={cantarell.className}>{children}</main>
       <Footer />

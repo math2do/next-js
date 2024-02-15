@@ -1,10 +1,11 @@
 import React from "react";
+import ImageResize from "./components/Image";
 
 const Tailwind = () => {
   return (
-    <div className="mx-auto max-w-6xl border-0">
-      <h1>What the hell is this</h1>
-    </div>
+    <>
+      <ImageResize />;
+    </>
   );
 };
 

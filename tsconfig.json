@@ -31,7 +31,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "app/coding-flow-01/scripts/seed.tjs"
   ],
   "exclude": [
     "node_modules"
