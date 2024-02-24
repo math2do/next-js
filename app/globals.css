@@ -58,11 +58,16 @@
   }
 }
 
+/* TODO: underline is not good when text wraps. Fix it  */
 @layer utilities {
   .underlined {
     @apply relative;
   }
   .underlined::after {
-    @apply absolute -bottom-[0.4em] left-1/2 h-[0.15em] w-[80%] -translate-x-1/2 rounded-sm bg-primary content-[''];
+    @apply absolute -bottom-[0.2em] left-1/2 h-[0.15em] w-[80%] -translate-x-1/2 rounded-sm bg-primary content-[''];
+  }
+
+  .container {
+    @apply mx-auto max-w-6xl;
   }
 }

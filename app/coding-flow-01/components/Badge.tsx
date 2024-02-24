@@ -6,7 +6,7 @@ interface BadgeProps {
 
 const Badge = ({ children }: BadgeProps) => {
   return (
-    <span className="rounded border bg-gray-200 px-2 py-0.5 text-gray-600">
+    <span className="rounded border bg-muted px-2 py-0.5 text-muted-foreground">
       {children}
     </span>
   );

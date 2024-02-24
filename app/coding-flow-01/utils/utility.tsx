@@ -36,4 +36,11 @@ const relativeTime = (date: Date): string => {
   return output;
 };
 
-export { relativeTime, formatMoney };
+const toSlug = (str: string) => {
+  return str
+    .toLowerCase()
+    .replace(/ /g, "-")
+    .replace(/[^\w-]+/g, "");
+};
+
+export { relativeTime, formatMoney, toSlug };

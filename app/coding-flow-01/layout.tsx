@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  icons: "./header-icon.svg",
-  title: "Mathura Tudu",
-  description: "Personal portfolio",
+  icons: "./math2do/header-icon.svg",
+  title: {
+    template: "%s | Flow Jobs",
+    default: "Flow Jobs",
+  },
+  description: "Find your dream developer job",
 };
 
 export default function RootLayout({
@@ -17,7 +19,6 @@ export default function RootLayout({
     <div>
       <Navbar />
       <main>{children}</main>
-      <Footer />
     </div>
   );
 }

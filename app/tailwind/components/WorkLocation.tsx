@@ -3,13 +3,14 @@ import Image from "next/image";
 
 const WorkLocation = () => {
   return (
-    <div className="mx-auto h-screen max-w-6xl border-2 bg-gray-100">
+    <div className="mx-auto h-screen max-w-6xl bg-gray-100">
       {/* worklocation */}
       <div className="mx-3 my-3">
         <Image
           src="/tailwind/logo.svg"
           width={300}
-          height={40}
+          height={1}
+          sizes="100vw"
           alt="Picture of the author"
         />
 
@@ -17,7 +18,8 @@ const WorkLocation = () => {
           className="mt-6 w-full rounded-md shadow-xl"
           src="/tailwind/beach-work.jpg"
           width={300}
-          height={40}
+          height={1}
+          sizes="100vw"
           alt="Picture of the author"
         />
 

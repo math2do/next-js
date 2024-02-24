@@ -1,12 +1,10 @@
-// This is comment which will not be executed. This is for the purpose of developers to understand
+import main from "./main";
 
 const Typescript = () => {
+  main();
   return (
-    <div>
-      <h1>Hello there</h1>
-      <section>
-        <p>What will be the next biggest thing in tech industry</p>
-      </section>
+    <div className="mx-auto max-w-6xl p-4 text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+      <span className="underlined">Check Terminal</span>
     </div>
   );
 };

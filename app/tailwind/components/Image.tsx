@@ -11,7 +11,7 @@ const ImageResize = () => {
           src="/tailwind/beach-work.jpg"
           alt="Developer on beach"
           // based on width that image takes on different screen-size, set the vw
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+          sizes="(max-width: 768px) 30vw, (max-width: 1200px) 50vw, 100vw"
           fill={true}
         />
       </div>
